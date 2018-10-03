@@ -17,7 +17,7 @@ h1:hover {
 
 .container {
 	width: 480px;
-	margin: 0px auto;
+	margin: 50px auto;
 	border: 1px solid #000000;
 	padding: 10px;
 }
@@ -25,13 +25,11 @@ h1:hover {
 .calWrap {
 	width: 460px;
 	margin: auto;
-	border: 1px solid #000000;
 }
 
 .row {
 	width: auto;
 	margin: 10px;
-	border: 1px solid red;
 }
 
 .dispResult {
@@ -45,4 +43,5 @@ button {
 	width: 80px;
 	height: 40px;
 	margin: 10px 13px;
+	font-size: 20px;
 }
