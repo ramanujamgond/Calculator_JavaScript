@@ -1,0 +1,49 @@
+/* Style Sheet for Calculator */
+
+body {
+	*margin: 0px;
+	*padding: 0px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 24px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1:hover {
+	text-shadow: 2px 1px 0px #c2c2d6;
+}
+
+.container {
+	width: 480px;
+	margin: 50px auto;
+	border: 1px solid #000000;
+	padding: 10px;
+}
+
+.calWrap {
+	width: 460px;
+	margin: auto;
+}
+
+.row {
+	width: auto;
+	margin: 10px;
+}
+
+.dispResult {
+	width: 410px;
+	margin: 10px auto;
+	height: 60px;
+	border: 1px solid #000000;
+}
+
+button {
+	width: 80px;
+	height: 40px;
+	margin: 10px 13px;
+	font-size: 20px;
+	background-color: #8e24aa;
+	color: white;
+}
