@@ -41,27 +41,41 @@
 	</div>
 
 	<script type="text/javascript">
+		var res=0,cur=0;
 		function numberClicked(num){
-			document.getElementById("dispResult").append(num);
+			
 			if(num=='+')
 			{
-
+				res+=cur;
+				document.getElementById("dispResult").innerHTML=res;
 			}
-			if(num=='-')
+			else if(num=='-')
 			{
-				
+				res-=cur;
+				document.getElementById("dispResult").innerHTML=res;
 			}
-			if(num=='/')
+			else if(num=='/')
 			{
-				
+				res/=cur;
+				document.getElementById("dispResult").innerHTML=res;
 			}
-			if(num=='*')
+			else if(num=='*')
 			{
-				
+				res*=cur;
+				document.getElementById("dispResult").innerHTML=res;
 			}
-			if(num=='=')
+			else if(num=='=')
 			{
-				
+				document.getElementById("dispResult").innerHTML=res;
+			}
+			else if(num=='C')
+			{
+				document.getElementById("dispResult").innerHTML="";
+			}
+			else
+			{
+				document.getElementById("dispResult").append(num);
+				cur=Number(document.getElementById("dispResult").innerHTML);
 			}
 		}
 	</script>
