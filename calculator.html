@@ -10,34 +10,40 @@
 		<h1>My first Calculator App in JavaScript</h1>
 		<div class="calWrap">
 			<div class="row">
-				<div class="dispResult">
+				<div id="dispResult">
 				</div>
 			</div>
 			<div class="row">
-				<button type="button">7</button>
-				<button type="button">8</button>
-				<button type="button">9</button>
-				<button type="button">/</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">7</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">8</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">9</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">/</button>
 			</div>
 			<div class="row">
-				<button type="button">6</button>
-				<button type="button">5</button>
-				<button type="button">4</button>
-				<button type="button">x</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">6</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">5</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">4</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">x</button>
 			</div>
 			<div class="row">
-				<button type="button">1</button>
-				<button type="button">2</button>
-				<button type="button">3</button>
-				<button type="button">-</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">1</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">2</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">3</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">-</button>
 			</div>
 			<div class="row">
-				<button type="button">C</button>
-				<button type="button">0</button>
-				<button type="button">=</button>
-				<button type="button">+</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">C</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">0</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">=</button>
+				<button type="button" onclick="numberClicked(this.innerHTML)">+</button>
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		function numberClicked(num){
+			document.getElementById("dispResult").innerHTML=num;
+		}
+	</script>
 </body>
 </html>
